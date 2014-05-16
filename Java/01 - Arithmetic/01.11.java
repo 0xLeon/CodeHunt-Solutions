@@ -20,7 +20,7 @@
  * Game Score: 3/3
  */
 public class Program {
-	public static int Puzzle(int x) {
+	public static int Puzzle(int x, int y) {
 		return x / y;
 	}
 }

@@ -17,18 +17,10 @@
  */
  
 /**
- * Game Score: 1/3
+ * Game Score: 3/3
  */
 public class Program {
 	public static int Puzzle(String s, char x) {
-        int n = 0;
-		
-		for (int i = 0, m = s.length(); i < m; i++) {
-			if (s.charAt(i) == x) {
-				n++;
-			}
-		}
-		
-		return n;
+        return s.replaceAll("[^" + x + "]*", "").length();
     }
 }
